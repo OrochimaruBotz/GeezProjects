@@ -20,7 +20,7 @@ from geezproject import (
 )
 
 
-MSG_BLACKLIST = "MAKANYA GA USAH BERTINGKAH GOBLOK, geezproject {} GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nGeezProjects v{}, Copyright © 2021-2022 VCKY! <https://github.com/vckyou>"
+MSG_BLACKLIST = "MAKANYA GA USAH BERTINGKAH GOBLOK, gojouserbot {} GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nGojouserbot v{}, Copyright © 2021-2022 Mangsud Assistant! <https://github.com/OrochimaruBotz>"
 
 
 async def geez_client(client):
