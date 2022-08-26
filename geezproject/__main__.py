@@ -28,7 +28,7 @@ try:
         sys.exit(1)
     if 874946835 not in DEVS:
         LOGS.warning(
-            f"EOL\nGeezProjects v{BOT_VER}, Copyright © 2021-2022 VICKY <https://github.com/vckyou>"
+            f"EOL\nGojoUbot v{BOT_VER}, Copyright © 2021-2022 Mangsud Assistant <https://github.com/OrochimaruBotz>"
         )
         sys.exit(1)
 except Exception as e:
@@ -40,7 +40,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info(f"Total Clients = {total} User")
 LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/GeezSupport")
-LOGS.info(f"💢 Geez - Projects Berhasil Diaktfikan 💢")
+LOGS.info(f"💢 Gojo-Userbot Berhasil Diaktfikan 💢")
 
 
 LOOP.run_until_complete(geez_userbot_on())
