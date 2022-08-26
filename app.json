@@ -1,9 +1,9 @@
 {
-  "name": "Geez geezproject",
-  "description": "[GeezUserbot] geezproject Telegram modular yang berjalan pada Python 3.9+",
+  "name": "GojoUbot",
+  "description": "[GojoUserbot] geezproject Telegram modular yang berjalan pada Python 3.9+",
   "logo": "https://telegra.ph/file/02b3dbeb4df30582f0d66.jp",
   "keywords": ["telegram", "geezproject", "geezprojects", "modular", "python"],
-  "repository": "https://github.com/vckyou/GeezProjects",
+  "repository": "https://github.com/OrochimaruBotz/GeezProjects",
   "stack": "container",
   "env": {
     "API_KEY": {
