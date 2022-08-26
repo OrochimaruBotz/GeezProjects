@@ -64,12 +64,12 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ping.client.get_me()
-    await xx.edit(f"**Geez - Project!!🎈**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
+    await xx.edit(f"**Gojo - Userbot!!🎈**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
 
 
 @geez_cmd(pattern=r"xping$")
 async def _(ping):
-    """For .ping command, ping the geezproject from any chat."""
+    """For .ping command, ping the gojouserbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     xping = await edit_or_reply(ping, "`Pinging....`")
@@ -166,7 +166,7 @@ async def _(speed):
 
 @geez_cmd(pattern="pong$")
 async def _(pong):
-    """For .ping command, ping the geezproject from any chat."""
+    """For .ping command, ping the gojouserbot from any chat."""
     start = datetime.now()
     xx = await edit_or_reply(pong, "`PONG!.....🏓`")
     end = datetime.now()
@@ -188,7 +188,7 @@ CMD_HELP.update(
     {
         "ping": f"**Plugin : **`ping`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}ping` ; `{cmd}xping` ; `{cmd}kping`\
-        \n  ❍▸ : **Untuk menunjukkan ping geezproject.\
+        \n  ❍▸ : **Untuk menunjukkan ping gojouserbot.\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}pong`\
         \n  ❍▸ : **Sama seperti perintah ping\
     "
@@ -200,7 +200,7 @@ CMD_HELP.update(
     {
         "speedtest": f"**Plugin : **`speedtest`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}speedtest`\
-        \n  ❍▸ : **Untuk Mengetes kecepatan server geezproject.\
+        \n  ❍▸ : **Untuk Mengetes kecepatan server gojouserbot.\
     "
     }
 )
