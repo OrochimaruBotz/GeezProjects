@@ -177,7 +177,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/vckyou/GeezProjects.git"
+    "UPSTREAM_REPO_URL", "https://github.com/OrochimaruBotz/GeezProjects.git"
 )
 
 # Custom Name Sticker Pack
@@ -205,10 +205,10 @@ ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
 ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 
 # untuk perintah teks costum .alive
-ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", "Hey, I Am geezproject.")
+ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", "Hey, I Am GojoUserbot.")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Geez")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Gojo")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡️")
@@ -392,7 +392,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**GeezProjects v{BOT_VER} is back up and running!**\n\n"
+        f"**GojoUserbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
@@ -571,7 +571,7 @@ with bot:
                 result = builder.photo(
                     file=logogeez,
                     link_preview=False,
-                    text=f"**🚫 GeezProjects Inline Menu 🚫**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🚫 GojoUserbot Inline Menu 🚫**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -580,12 +580,12 @@ with bot:
                     description="Repository GeezProjects Ubot",
                     url="https://t.me/GeezSupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**GeezProjects Ubot**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [Vcky](https://t.me/vckyou)\n**Support :** @GeezProject\n❍▸ **Repository :** [GeezProjects](https://github.com/vckyou/GeezProjects)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Gojo Ubot**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [Mangusd Asisstant](https://t.me/OrochimaruBotz)\n**Support :** @GeezProject\n❍▸ **Repository :** [GeezProjects](https://github.com/OrochimaruBotz/GeezProjects)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/vckyou/GeezProjects"
+                                "ʀᴇᴘᴏ", "https://github.com/OrochimaruBotz/GeezProjects"
                             ),
                         ],
                     ],
@@ -625,23 +625,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="⚡ GeezProjects ⚡",
-                    description="GeezProjects Ubot | Telethon",
+                    title="⚡ GojoUserbot ⚡",
+                    description="Gojo Ubot | Telethon",
                     url="https://t.me/GeezSupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**GeezProjects**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @GeezProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"*GojoUserbot**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @GeezProject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/vckyou/GeezProjects"
+                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/OrochimaruBotz/GeezProjects"
                              ),
                         ],
                     ],
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥 geezproject PORTAL", switch_pm_param="start"
+                [result], switch_pm="👥gojo PORTAL", switch_pm_param="start"
             )
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))
@@ -649,7 +649,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**GeezProjects Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
+                text = f"**GojoUbot Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
                 await event.edit(
                     text,
                     file=logogeez,
@@ -684,7 +684,7 @@ with bot:
                     "❌ **Help Mode Button Ditutup!** ❌", buttons=openlagi
                 )
             else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini geezproject Milik {owner}"
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini GojoUbot Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -730,7 +730,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini geezproject Milik {owner}"
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini gojobot Milik {owner}"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
