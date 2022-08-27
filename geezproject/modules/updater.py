@@ -49,7 +49,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 "**[HEROKU]: Harap Tambahkan Variabel** `HEROKU_APP_NAME` "
-                " **untuk deploy perubahan terbaru dari geezproject.**",
+                " **untuk deploy perubahan terbaru dari gojouserbot.**",
             )
             repo.__del__()
             return
@@ -61,7 +61,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy GeezProjects dyno.**",
+                "**Kredensial Heroku tidak valid untuk deploy GojoUserbot dyno.**",
             )
             return repo.__del__()
         try:
@@ -92,7 +92,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Build Gagal!** Dibatalkan karena ada beberapa code yang error.`"
             )
         await edit_or_reply(
-            xx, "`GeezProjects Berhasil Di Deploy! geezproject bisa di gunakan kembali.`"
+            xx, "`GojoUserbot Berhasil Di Deploy! gojouserbot bisa di gunakan kembali.`"
         )
 
     else:
@@ -107,7 +107,7 @@ async def update(xx, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await edit_or_reply(
-        xx, "`GeezProjects Berhasil Diupdate! geezproject bisa di Gunakan Lagi.`"
+        xx, "`GojoUserbot Berhasil Diupdate! gojouserbot bisa di Gunakan Lagi.`"
     )
 
     try:
@@ -147,7 +147,7 @@ async def upstream(event):
         if conf is None:
             return await xx.edit(
                 f"**Sayangnya, Directory {error} Tampaknya Bukan Dari Repo."
-                "\nTapi Kita Bisa Memperbarui Paksa geezproject Menggunakan** `.update deploy`"
+                "\nTapi Kita Bisa Memperbarui Paksa GojoUserbot Menggunakan** `.update deploy`"
             )
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
@@ -168,23 +168,23 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await xx.edit("`[HEROKU]: Update Deploy GeezProjects Sedang Dalam Proses...`")
+        await xx.edit("`[HEROKU]: Update Deploy Gojouserbot Sedang Dalam Proses...`")
         await deploy(xx, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await edit_delete(xx, "**❖ GeezProjects Sudah Versi Terbaru**")
+        await edit_delete(xx, "**❖GojoUserbot Sudah Versi Terbaru**")
         return repo.__del__()
 
     if conf == "" and not force_update:
         await print_changelogs(xx, ac_br, changelog)
         await xx.delete()
         return await event.respond(
-            "**Ketik** `.update deploy` **untuk Mengupdate geezproject.**"
+            "**Ketik** `.update deploy` **untuk Mengupdate Gojouserbot.**"
         )
 
     if force_update:
-        await xx.edit("**Sinkronisasi Paksa Ke Kode geezproject Terbaru, Harap Tunggu...**")
+        await xx.edit("**Sinkronisasi Paksa Ke Kode GojoUserbot Terbaru, Harap Tunggu...**")
 
     if conf == "now":
         for commit in changelog.splitlines():
@@ -207,9 +207,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}update`\
-        \n  ↳ : **Untuk Melihat Pembaruan Terbaru GeezProjects.\
+        \n  ↳ : **Untuk Melihat Pembaruan Terbaru GojoUserbot.\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}update deploy`\
-        \n  ↳ : **Untuk MengUpdate Fitur Terbaru Dari GeezProjects.\
+        \n  ↳ : **Untuk MengUpdate Fitur Terbaru Dari GojoUserbot.\
     "
     }
 )
