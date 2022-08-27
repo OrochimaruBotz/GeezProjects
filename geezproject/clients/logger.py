@@ -10,9 +10,9 @@ from geezproject import GEEZ2, GEEZ3, GEEZ4, GEEZ5, bot, branch
 
 MSG_ON = """
      __⚡ Congratulations ⚡__
-__GeezProhects Has Been Deployed__
+__GojoUserbot Has Been Deployed__
 ─┄───┅───┄─
-▸ **geezproject Version -** `{}@{}`
+▸ **GojoUserbot Version -** `{}@{}`
 ▸ **Ketik** `{}ping` **untuk Mengecheck Bot**
 ─┄───┅───┄─
 """
