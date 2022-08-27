@@ -31,11 +31,11 @@ async def help(event):
         await edit_or_reply(
             event,
             f"{ICON_HELP}   {string}"
-            f"\n\nSupport @{GROUP}\n"
+            f"\n\n©By Mangsud Assistant\n"
         )
         await event.reply(
             f"╭┄──────┈┄┈──────┄\n"
-            f"│ ▸ **Daftar Perintah GojoUsernot :**\n"
+            f"│ ▸ **Daftar Perintah GojoUserbot :**\n"
             f"│ ▸ **Jumlah** `{len(modules)}` **Modules**\n"
             f"│ ▸ **Owner:** [{user.first_name}](tg://user?id={user.id})\n"
             f"├┄─────┈┄┈─────┄\n"
