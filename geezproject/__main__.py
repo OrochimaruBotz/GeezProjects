@@ -24,7 +24,7 @@ try:
     ).json()
     if user.id in blacklistgeez:
         LOGS.warning(
-            "NAMPAKNYA geezproject TIDAK DAPAT BEKERJA, MUNGKIN ANDA TELAH DI BLACKLIST OLEH PEMILIK geezproject.\nCredits: @VckyouuBitch"        )
+            "NAMPAKNYA GOJOUSERBOT TIDAK DAPAT BEKERJA, MUNGKIN ANDA TELAH DI BLACKLIST OLEH PEMILIK Gokouserbot.\nCredits: @Mangsud Asisstant"        )
         sys.exit(1)
     if 874946835 not in DEVS:
         LOGS.warning(
@@ -39,7 +39,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("geezproject.modules." + module_name)
 
 LOGS.info(f"Total Clients = {total} User")
-LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/GeezSupport")
+LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/BOT")
 LOGS.info(f"💢 Gojo-Userbot Berhasil Diaktfikan 💢")
 
 
