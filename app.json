@@ -18,6 +18,10 @@
       "description": "Buat Bot di t.me/botfather Masukan BOT tokennya disini",
       "required": false
     },
+    "BOTLOG_CHATID": {
+     "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890
+     "required": true
+    },
      "STRING_SESSION": {
       "description": "Dapatkan String Session di Grup » https://t.me/GeezSupport » Lalu ketik /get string",
       "required": true
