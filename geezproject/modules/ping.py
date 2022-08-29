@@ -64,7 +64,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ping.client.get_me()
-    await xx.edit(f"**Gojo - Userbot!!🎈**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration))
+    await xx.edit(f"**Gojo - Userbot Runtime**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}" % (duration))
 
 
 @geez_cmd(pattern=r"xping$")
@@ -76,7 +76,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**PONGGG!**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}" % (duration)
     )
 
 
@@ -85,17 +85,17 @@ async def _(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
-    await kopong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
-    await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
-    await kopong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
+    await kopong.edit("**◆◈PINGGGG◈◆**")
+    await kopong.edit("**BENTARR**")
+    await kopong.edit("**☬LANJUTTT☬**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await kopong.edit(
-        f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
-        f"\n ⫸ ᴷᵒⁿᵗᵒˡ `%sms` \n"
-        f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
-        f"\n ⫸ ᴷᵃᵐᵖᵃⁿᵍ『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
+        f"**✲ Woeylah** "
+        f"\n ⫸ Tobat `%sms` \n"
+        f"**✲ Beliau Lagi Tobat** "
+        f"\n ⫸ Lagi Tobat『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
     )
 
 
@@ -122,13 +122,13 @@ async def _(pong):
     await kping.edit("8=✊==D")
     await kping.edit("8==✊=D")
     await kping.edit("8===✊D")
-    await kping.edit("8===✊D💦")
-    await kping.edit("8====D💦💦")
-    await kping.edit("**CROOTTTT PINGGGG!**")
+    await kping.edit("8===✊D")
+    await kping.edit("8====D")
+    await kping.edit("**PINGGGG!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
-        f"**NGENTOT!! 🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**WOEYYY! 🐨**\n**PINGENG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
