@@ -577,15 +577,15 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository GeezProjects Ubot",
-                    url="https://t.me/GeezSupport",
+                    description="Repository GojoUbot",
+                    url="https://t.me/AssistantBotGroup2",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Gojo Ubot**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [Mangusd Asisstant](https://t.me/OrochimaruBotz)\n**Support :** @GeezProject\n❍▸ **Repository :** [GeezProjects](https://github.com/OrochimaruBotz/GeezProjects)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Gojo Ubot**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [Mangusd Asisstant](https://t.me/OrochimaruBotz)\n**Support :** @AssistantBotGroup2\n❍▸ **Repository :** [GojoUserbot](https://github.com/OrochimaruBotz/GojoUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/AssistantBotGroup2"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/OrochimaruBotz/GeezProjects"
+                                "ʀᴇᴘᴏ", "https://github.com/OrochimaruBotz/GojoUserbot"
                             ),
                         ],
                     ],
@@ -627,21 +627,21 @@ with bot:
                 result = builder.article(
                     title="⚡ GojoUserbot ⚡",
                     description="Gojo Ubot | Telethon",
-                    url="https://t.me/GeezSupport",
+                    url="https://t.me/AssistantBotGroup2",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"*GojoUserbot**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @GeezProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"*GojoUserbot**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @AssistantBotGroup2\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/AssistantBotGroup2"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/OrochimaruBotz/GeezProjects"
+                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/OrochimaruBotz/GojoUserbot"
                              ),
                         ],
                     ],
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥gojo PORTAL", switch_pm_param="start"
+                [result], switch_pm="👥Gojo PORTAL", switch_pm_param="start"
             )
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))
@@ -672,7 +672,7 @@ with bot:
                 await event.edit(buttons=buttons)
             else:
                 reply_pop_up_alert = (
-                    f"Kamu Tidak diizinkan, ini geezproject Milik {ALIVE_NAME}"
+                    f"Kamu Tidak diizinkan, ini geezproject Milik Mangsud"
                 )
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -698,7 +698,7 @@ with bot:
                 buttons = paginate_help(current_page_number - 1, dugmeler, "helpme")
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini geezproject Milik {owner}"
+                reply_pop_up_alert = f"Kamu Tidak diizinkan, ini gojouserbot Milik {owner}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ub_modul_(.*)")))
