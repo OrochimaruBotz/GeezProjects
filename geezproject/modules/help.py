@@ -31,7 +31,7 @@ async def help(event):
         await edit_or_reply(
             event,
             f"{ICON_HELP}   {string}"
-            f"\n\nCreator By @Mangsud Asisstant\n"
+            f"\n\nCreator By @BijiKacang\n"
         )
         await event.reply(
             f"╭┄──────┈┄┈──────┄\n"
