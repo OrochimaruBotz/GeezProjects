@@ -67,9 +67,9 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**GeezProjects** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**GojoUserbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**GeezProjects Berhasil di matikan!**")
+    await edit_or_reply(event, "**GojoUserbot Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -80,7 +80,7 @@ async def shutdown_bot(event):
 async def restart_bot(event):
     if event.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(event, "**GeezProjects Berhasil di Restart**")
+    await edit_or_reply(event, "**GojoUserbot Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
             BOTLOG_CHATID, "#RESTART \n" "**GeezProjects Berhasil Di Restart**"
@@ -94,7 +94,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n🔸 [geezproject Repo](https://github.com/vckyou/GeezProjects/blob/master/README.md)"
+        "\n🔸 [GojoUserbot Repo](https://github.com/OrochimaruBotz/GojoUserbot/blob/master/README.md)"
         "\n🔸 [List Variabel Heroku untuk Geez-geezproject](https://telegra.ph/List-Variable-Heroku-Untuk-GeezProjects-01-31)"
         "\n🔸 [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-geezproject-11-02)",
     )
@@ -122,13 +122,13 @@ async def repo_is_here(event):
         f"│    __Thanks For Using Me__\n"
         f"├‒─‒─────────────\n"
         f"│`Bot Ver    :` `{BOT_VER}@{branch}`\n"
-        f"│`Support    :` [Geez Support](t.me/GeezSupport)\n"
-        f"│`Channel    :` [Channel Support](t.me/GeezProject)\n"
-        f"│`Owner Repo :` [vickyaz](t.me/vckyaz)\n"
+        f"│`Support    :` [Gojo Support](t.me/AssistantBot2)\n"
+        f"│`Channel    :` [Channel Support](t.me/BOT)\n"
+        f"│`Owner Repo :` [Mangsud Assistant](t.me/BijiKacang)\n"
         f"├‒─‒──────────────\n"
-        f"│`Repository :` [𝙂𝙚𝙚𝙯 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨](https://github.com/Vckyou/GeezProjects)\n"
+        f"│`Repository :` [Gojo Userbot](https://github.com/OrochimaruBotz/GojoUserbot)\n"
         f"╰‒─‒─────────────\n"
-        f"  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/Vckyou/GeezProjects/blob/master/LICENSE)"
+        f"  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/OrochimaruBotz/GojoUserbot/blob/master/LICENSE)"
     )
 
 
@@ -154,7 +154,7 @@ async def raw(event):
     with io.BytesIO(str.encode(the_real_message)) as out_file:
         out_file.name = "raw_message_data.txt"
         await edit_or_reply(
-            event, "`Check the geezproject log for the decoded message data !!`"
+            event, "`Check the gojouserbot log for the decoded message data !!`"
         )
         await event.client.send_file(
             BOTLOG_CHATID,
@@ -302,7 +302,7 @@ CMD_HELP.update(
     {
         "sleep": f"**Plugin : **`sleep`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}sleep`\
-        \n  ❍▸ : **Biarkan GeezProjects tidur selama beberapa detik \
+        \n  ❍▸ : **Biarkan GojoUserbot tidur selama beberapa detik \
     "
     }
 )
@@ -312,9 +312,9 @@ CMD_HELP.update(
     {
         "repo": f"**Plugin : **`Repository GeezProjects`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}repo`\
-        \n  ❍▸ : **Menampilan link Repository GeezProjects\
+        \n  ❍▸ : **Menampilan link Repository GojoUserbot\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}string`\
-        \n  ❍▸ : **Menampilan link String GeezProjects\
+        \n  ❍▸ : **Menampilan link String GojoUserbot\
     "
     }
 )
@@ -324,7 +324,7 @@ CMD_HELP.update(
     {
         "readme": f"**Plugin : **`Panduan Menggunakan geezproject`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}readme`\
-        \n  ❍▸ : **Menyediakan tautan untuk mengatur geezproject dan modulnya\
+        \n  ❍▸ : **Menyediakan tautan untuk mengatur GojoUserbot dan modulnya\
     "
     }
 )
@@ -332,9 +332,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": f"**Plugin : **`Restart GeezProjects`\
+        "restart": f"**Plugin : **`Restart GOjoUserbot`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}restart`\
-        \n  ❍▸ : **Untuk Merestart geezproject.\
+        \n  ❍▸ : **Untuk Merestart GojoUserbot.\
     "
     }
 )
@@ -344,7 +344,7 @@ CMD_HELP.update(
     {
         "shutdown": f"**Plugin : **`shutdown`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}shutdown`\
-        \n  ❍▸ : **Mematikan geezproject.\
+        \n  ❍▸ : **Mematikan gojouserbot.\
     "
     }
 )
