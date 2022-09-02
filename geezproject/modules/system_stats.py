@@ -157,7 +157,7 @@ async def bot_ver(event):
 
         await edit_or_reply(
             event,
-            "**geezproject Versi :** " f"`{verout}`" "\n✥ **Revisi :** " f"`{revout}`",
+            "**gojouserbot Versi :** " f"`{verout}`" "\n✥ **Revisi :** " f"`{revout}`",
         )
     else:
         await edit_or_reply(
@@ -171,7 +171,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"╭═──────╼═⌘═╾───────═\n"
-        f"┃[⚡ＧΞ ΞＺ - ＰＲＯＪＥＣＴ⚡](https://github.com/vckyou/GeezProjects)\n"
+        f"┃[⚡ＧOJO - USERBOT⚡](https://github.com/OrochimaruBotz/GojoUserbot)\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" {alive_text} \n"
         f" ─────────────────── \n"
@@ -211,7 +211,7 @@ CMD_HELP.update(
         \n\n   :** `{cmd}sysd`\
         \n   : **Informasi sistem menggunakan neofetch.\
         \n\n\n   :** `{cmd}botver`\
-        \n   : **Menampilkan versi geezproject.\
+        \n   : **Menampilkan versi gojouserbot.\
         \n\n   :** `{cmd}spc`\
         \n   : **Menampilkan spesifikasi sistem secara lengkap.\
     "
