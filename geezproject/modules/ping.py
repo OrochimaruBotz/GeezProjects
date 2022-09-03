@@ -64,7 +64,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ping.client.get_me()
-    await xx.edit(f"**Gojo - Userbot Runtime**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}" % (duration))
+    await xx.edit(f"**Runtime**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}" % (duration))
 
 
 @geez_cmd(pattern=r"xping$")
@@ -84,7 +84,7 @@ async def _(ping):
 async def _(pong):
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
+    kopong = await edit_or_reply(pong, "**『』**")
     await kopong.edit("**◆◈PINGGGG◈◆**")
     await kopong.edit("**BENTARR**")
     await kopong.edit("**☬LANJUTTT☬**")
@@ -128,7 +128,7 @@ async def _(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
-        f"**WOEYYY! 🐨**\n**PINGENG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**🐼**\n**PINGENG** : %sms\n**Bot Uptime** : {uptime}" % (duration)
     )
 
 
