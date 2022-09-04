@@ -779,11 +779,11 @@ async def bot_start(event):
                         \n\n**Saya adalah {my_first}** \
                         \n**Anda dapat menghubungi [{OWNER}](tg://user?id={OWNER_ID}) dari sini.**\
                         \n**Jangan melakukan spam atau anda akan di Banned**\
-                        \n\n**Powered by** [geezproject](https://github.com/vckyou/GeezProjects)"
+                        \n\n**Powered by** [gojouserbot](https://github.com/OrochimaruBotz/GojoUserbot)"
         buttons = [
             (
-                Button.url("ɢʀᴏᴜᴘ", f"https://t.me/{GROUP}"),
-                Button.url("ᴄʜᴀɴɴᴇʟ", f"https://t.me/{CHANNEL}"),
+                Button.url("ɢʀᴏᴜᴘ", f"https://t.me/Assistandbott"),
+                Button.url("ᴄʜᴀɴɴᴇʟ", f"https://t.me/Bot"),
             )
         ]
     else:
