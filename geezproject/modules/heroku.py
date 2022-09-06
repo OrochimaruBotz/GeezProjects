@@ -189,16 +189,16 @@ async def dyno_usage(dyno):
         await xx.edit(
             "**Informasi Dyno Heroku :** \n"
             "╭┈─╼━━━━━━━━━━━━━╾─┈  \n"
-            "│          ⚡Gojo - Userbot⚡  \n"
+            "│          🔥Gojo - Userbot🔥  \n"
             "├┈─╼━━━━━━━━━━━━━╾─┈  \n"
-            "│💠 ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ꜱᴀᴀᴛ ɪɴɪ \n"
+            "│🗿 ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ꜱᴀᴀᴛ ɪɴɪ \n"
             f"│  ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ. \n"
             f"│  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% \n"
             "├┈──────────────┈\n"
-            "│💠 ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ʙᴜʟᴀɴ ɪɴɪ \n"
+            "│🗿 ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ ʙᴜʟᴀɴ ɪɴɪ \n"
             f"│  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. \n"
             f"│  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. \n"
-             "╰┈─────────────┈ \n"
+             "╰┈────────────┈ \n"
             f"▸ **Sisa Dyno Anda** `{day}` **Hari Lagi**"
         )
         return True
@@ -276,7 +276,7 @@ CMD_HELP.update(
     {
         "heroku": f"**Plugin : **`heroku`\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}set var <nama var> <value>`\
-        \n  ❍▸ : **Tambahkan Variabel Baru Atau Memperbarui Variabel Setelah Menyetel Variabel GeezProjects Akan Di Restart.\
+        \n  ❍▸ : **Tambahkan Variabel Baru Atau Memperbarui Variabel Setelah Menyetel Variabel GojoUserbot Akan Di Restart.\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}get var or .get var <nama var>`\
         \n  ❍▸ : **Dapatkan Variabel Yang Ada,Harap Gunakan Di Grup Private Anda!\
         \n\n  𝘾𝙤𝙢𝙢𝙖𝙣𝙙 :** `{cmd}del var <nama var>`\
